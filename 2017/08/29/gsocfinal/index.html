@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://Abde5.github.io/blog/2017/08/29/gsocfinal/index.html">
 <meta property="og:site_name" content="Abde&#39;s stuff">
 <meta property="og:description" content="Final report from Abdeselam El-Haman Abdeselam for GSOC 2017I have been working for Copyleft Games during this summer. My project this summer has been to introduce shadow rendering by shadow mappingin">
-<meta property="og:updated_time" content="2017-08-29T02:31:58.391Z">
+<meta property="og:updated_time" content="2017-08-29T02:48:00.206Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GSOC final report">
 <meta name="twitter:description" content="Final report from Abdeselam El-Haman Abdeselam for GSOC 2017I have been working for Copyleft Games during this summer. My project this summer has been to introduce shadow rendering by shadow mappingin">
@@ -240,7 +240,7 @@
         
             
             <h1 id="Final-report-from-Abdeselam-El-Haman-Abdeselam-for-GSOC-2017"><a href="#Final-report-from-Abdeselam-El-Haman-Abdeselam-for-GSOC-2017" class="headerlink" title="Final report from Abdeselam El-Haman Abdeselam for GSOC 2017"></a>Final report from Abdeselam El-Haman Abdeselam for GSOC 2017</h1><p>I have been working for Copyleft Games during this summer.</p>
-<p>My project this summer has been to introduce <em>shadow rendering</em> by shadow mapping<br>in PySoy. This work can be seen in <a href="https://bitbucket.org/Abdulito/pysoy-shadowmapping/src" target="_blank" rel="external">my fork hosted in bitbucket</a> (branch <code>shadow</code>)<br>and also read my <a href="http://abdulito.me/blog/categories/gsoc/" target="_blank" rel="external">devlog</a> during this whole summer.</p>
+<p>My project this summer has been to introduce <em>shadow rendering</em> by shadow mapping<br>in PySoy. This work can be seen in <a href="https://bitbucket.org/Abdulito/pysoy-shadowmapping/src" target="_blank" rel="external">my fork hosted in bitbucket</a> (branch <code>shadow</code>, commits <a href="https://bitbucket.org/Abdulito/pysoy-shadowmapping/commits/6facf3a14c6c68f32635ea12558d348a8e6428e1" target="_blank" rel="external">6facf3a</a> to <a href="https://bitbucket.org/Abdulito/pysoy-shadowmapping/commits/0f0580b7dba72c1f55d511da97fe03f842bf34a0" target="_blank" rel="external">0f0580b</a>)<br>and also read my <a href="http://abdulito.me/blog/categories/gsoc/" target="_blank" rel="external">devlog</a> during this whole summer.</p>
 <a id="more"></a>
 <h2 id="My-work"><a href="#My-work" class="headerlink" title="My work"></a>My work</h2><p>I implemented the codebase for a shadow mapping rendering of a Scene (<code>Scene.gs</code>).<br>This rendering is composed in two important parts. During the first one, the <em>depthmap</em><br>of the scene is generated (shadowpass) and then used to generate the new rendered picture<br>by comparing the point distance with the depth at that same spot in the depthmap generated before (mainpass). You can have more details <a href="http://www.opengl-tutorial.org/es/intermediate-tutorials/tutorial-16-shadow-mapping/" target="_blank" rel="external">here</a>.</p>
 <p>PySoy uses the OpenGL ES2 API to render its images and GLSL for the shaders. I have then implemented 2 shaders for the <code>depthmap</code> and <code>shadow rendering</code> (the two steps described before).</p>
@@ -271,7 +271,7 @@
 
 </div>
 
-    <a data-url="http://Abde5.github.io/blog/2017/08/29/gsocfinal/" data-id="cj6wzaeop000c2xjbqno69nwg" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://Abde5.github.io/blog/2017/08/29/gsocfinal/" data-id="cj6wzu6kb000cn4jb8nf23at2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
